@@ -24,7 +24,7 @@ def jogar():
 
     for rodada in range(1, tentativas + 1):
         print("Você tem {} de {} tentativas " .format(rodada, tentativas))
-        chute = int(input("Digite um numero entre 0 e 100: "))
+        chute = int(input("Digite um numero entre 1 e 100: "))
         print("Você digitou ", chute)
 
         if (chute < 1 or chute > 100):
@@ -41,8 +41,10 @@ def jogar():
         else:
             if(maior):
                 print("VocÊ errou o numero, você digitou oum numero maior")
+                print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
             if (menor):
                 print("Você errou o numero, você digitou um numero menor!")
+                print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
             perdidos = abs(chute - numero_secreto)
             totalp = abs(totalp - perdidos)
 

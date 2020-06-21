@@ -14,4 +14,3 @@ if (jogo == 1):
 else:
     print("Jogando Adivinhação")
     adivinhacao.jogar()
- 
